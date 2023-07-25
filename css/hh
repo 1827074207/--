@@ -1,0 +1,231 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans SC', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.header {
+    background-color: #007bff;
+    text-align: center;
+    padding: 40px;
+}
+
+.header h1 {
+    font-size: 48px;
+    color: #fff;
+    font-family: 'Microsoft YaHei', sans-serif;
+    position: relative;
+}
+
+.header h1:before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    clip: rect(0, 0, 0, 0);
+    animation: glitch 2s infinite;
+}
+
+@keyframes glitch {
+    0% {
+        clip: rect(24px, 9999px, 28px, 0);
+    }
+    5% {
+        clip: rect(1px, 9999px, 24px, 0);
+    }
+    10% {
+        clip: rect(23px, 9999px, 4px, 0);
+    }
+    15% {
+        clip: rect(4px, 9999px, 6px, 0);
+    }
+    /* Add more glitch frames as needed */
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.photo {
+    flex: 1;
+    max-width: 50%;
+    height: auto;
+    margin-right: 20px;
+}
+
+.overlay {
+    flex: 1;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.overlay h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.overlay p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.footer {
+    background-color: #007bff;
+    text-align: center;
+    padding: 40px;
+}
+
+.contact-btn {
+    background-color: #fff;
+    color: #007bff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.contact-btn:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.contact-info {
+    margin-top: 10px;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans SC', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.header {
+    background-color: #57800b;
+    text-align: center;
+    padding: 40px;
+}
+
+.header h1 {
+    font-size: 48px;
+    color: #fff;
+    font-family: 'Microsoft YaHei', sans-serif;
+    position: relative;
+}
+
+.header h1:before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    clip: rect(0, 0, 0, 0);
+    animation: glitch 2s infinite;
+}
+
+@keyframes glitch {
+    0% {
+        clip: rect(24px, 9999px, 28px, 0);
+    }
+    5% {
+        clip: rect(1px, 9999px, 24px, 0);
+    }
+    10% {
+        clip: rect(23px, 9999px, 4px, 0);
+    }
+    15% {
+        clip: rect(4px, 9999px, 6px, 0);
+    }
+    /* Add more glitch frames as needed */
+}
+
+.content {
+    text-align: center;
+    padding: 40px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    width: 60%;
+    margin: 0 auto;
+    height: 60vh; /* 设置高度，以便中间的 div 在页面上占据 60% 的视窗高度 */
+}
+
+.overlay {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 600px;
+}
+
+.overlay-content {
+    flex: 1;
+}
+
+.overlay-content.left {
+    text-align: left;
+}
+
+.overlay-content.right {
+    text-align: right;
+}
+
+.overlay h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.overlay p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.footer {
+    background-color: #7bcf21;
+    text-align: center;
+    padding: 40px;
+}
+
+.contact-btn {
+    background-color: #fff;
+    color: #007bff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.contact-btn:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.contact-info {
+    margin-top: 10px;
+}

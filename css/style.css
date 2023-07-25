@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans SC', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.header {
+    background-color: #007bff;
+    text-align: center;
+    padding: 40px;
+}
+
+.header h1 {
+    font-size: 48px;
+    color: #fff;
+    font-family: 'Microsoft YaHei', sans-serif;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 40px;
+}
+
+.left,
+.right {
+    flex: 2;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 8px;
+}
+
+.slideshow {
+    flex: 6;
+    max-height: 300px; /* 设置轮播照片的最大高度，可根据需要调整 */
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+
+/* 轮播图片样式，这里使用一个简单的图片作为示例，您可以使用图片轮播组件来实现更多效果 */
+.slideshow img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;
+        position: absolute;
+        animation: showNextImage 10s infinite; /* 修改动画名称为 showNextImage */
+        object-fit: contain;
+}
+
+@keyframes showNextImage {
+    0%, 100% {
+        opacity: 0;
+    }
+    20%, 80% {
+        opacity: 1;
+    }
+}
+
+.right {
+    text-align: right;
+}
+
+.footer {
+    background-color: #007bff;
+    text-align: center;
+    padding: 40px;
+}
+
+.contact-btn {
+    background-color: #fff;
+    color: #007bff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.contact-btn:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.contact-info {
+    margin-top: 10px;
+}
